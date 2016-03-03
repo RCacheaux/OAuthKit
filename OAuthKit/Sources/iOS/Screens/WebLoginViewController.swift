@@ -40,7 +40,7 @@ class WebLoginViewController: UIViewController {
 
   func getAccessTokenWithAuthCode(authCode: String) {
 
-    guard let url = NSURL(string: "https://bitbucket.org/site/oauth2/access_token?grant_type=authorization_code&code=\(authCode)&redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb") else {
+    guard let url = NSURL(string: "https://bitbucket.org/site/oauth2/access_token") else {
       return
     }
     print("POSTing \(url.absoluteString)")
@@ -50,13 +50,19 @@ class WebLoginViewController: UIViewController {
     let basicAuthCredentials = "\(clientID):\(clientSecret)"
     if let basicAuthCredentialsData = basicAuthCredentials.dataUsingEncoding(NSUTF8StringEncoding) {
       let base64EncodedCredentials = basicAuthCredentialsData.base64EncodedDataWithOptions([])
-      let basicAuthHeaderValue = "Basic \(base64EncodedCredentials)"
-      request.setValue(basicAuthHeaderValue, forHTTPHeaderField: "Authorization")
+      if let basicAuthEncodedCredentials = String(data: base64EncodedCredentials, encoding: NSUTF8StringEncoding) {
+        let basicAuthHeaderValue = "Basic \(basicAuthEncodedCredentials)"
+        request.setValue(basicAuthHeaderValue, forHTTPHeaderField: "Authorization")
+      }
     } else {
       print("Could not create Basic Auth HTTP header before POSTing for access token.")
       return
     }
     request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+
+    if let requestBody = "grant_type=authorization_code&code=\(authCode)".stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) {
+      request.HTTPBody = requestBody.dataUsingEncoding(NSUTF8StringEncoding)
+    }
 
     NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
       guard error == nil else {
@@ -73,6 +79,14 @@ class WebLoginViewController: UIViewController {
       } else {
         print("Could not convert response data into UTF8 String from access token POST.")
       }
+
+      do {
+        let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+      } catch {
+
+      }
+
+
     }.resume()
 
   }

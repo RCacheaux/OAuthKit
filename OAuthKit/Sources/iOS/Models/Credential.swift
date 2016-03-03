@@ -5,4 +5,8 @@ import Foundation
 struct Credential {
   let accessToken: String
   let expirationDate: NSDate
+  let scopes: [String]
+  let expiresIn: Int
+  let refreshToken: String
+  let tokenType: String
 }
