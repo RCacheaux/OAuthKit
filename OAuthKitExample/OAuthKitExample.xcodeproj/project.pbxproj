@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2888C9741C87959E0085C926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888C9731C87959E0085C926 /* AppDelegate.swift */; };
+		2888C9761C87959E0085C926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888C9751C87959E0085C926 /* ViewController.swift */; };
+		2888C9791C87959E0085C926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2888C9771C87959E0085C926 /* Main.storyboard */; };
+		2888C97B1C87959F0085C926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2888C97A1C87959F0085C926 /* Assets.xcassets */; };
+		2888C97E1C87959F0085C926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2888C97C1C87959F0085C926 /* LaunchScreen.storyboard */; };
+		2888C98E1C8795B70085C926 /* OAuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2888C98B1C8795AB0085C926 /* OAuthKit.framework */; };
+		2888C98F1C8795B70085C926 /* OAuthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2888C98B1C8795AB0085C926 /* OAuthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2888C98A1C8795AB0085C926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2888C9431C87923F0085C926;
+			remoteInfo = OAuthKit;
+		};
+		2888C98C1C8795AB0085C926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2888C94D1C8792400085C926;
+			remoteInfo = OAuthKitTests;
+		};
+		2888C9901C8795B70085C926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2888C9421C87923F0085C926;
+			remoteInfo = OAuthKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2888C9921C8795B70085C926 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2888C98F1C8795B70085C926 /* OAuthKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2888C9701C87959E0085C926 /* OAuthKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAuthKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2888C9731C87959E0085C926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2888C9751C87959E0085C926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2888C9781C87959E0085C926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2888C97A1C87959F0085C926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2888C97D1C87959F0085C926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2888C97F1C87959F0085C926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthKit.xcodeproj; path = ../OAuthKit/OAuthKit.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2888C96D1C87959E0085C926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2888C98E1C8795B70085C926 /* OAuthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2888C9671C87959E0085C926 = {
+			isa = PBXGroup;
+			children = (
+				2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */,
+				2888C9721C87959E0085C926 /* OAuthKitExample */,
+				2888C9711C87959E0085C926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2888C9711C87959E0085C926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2888C9701C87959E0085C926 /* OAuthKitExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2888C9721C87959E0085C926 /* OAuthKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				2888C9731C87959E0085C926 /* AppDelegate.swift */,
+				2888C9751C87959E0085C926 /* ViewController.swift */,
+				2888C9771C87959E0085C926 /* Main.storyboard */,
+				2888C97A1C87959F0085C926 /* Assets.xcassets */,
+				2888C97C1C87959F0085C926 /* LaunchScreen.storyboard */,
+				2888C97F1C87959F0085C926 /* Info.plist */,
+			);
+			path = OAuthKitExample;
+			sourceTree = "<group>";
+		};
+		2888C9861C8795AB0085C926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2888C98B1C8795AB0085C926 /* OAuthKit.framework */,
+				2888C98D1C8795AB0085C926 /* OAuthKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2888C96F1C87959E0085C926 /* OAuthKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2888C9821C87959F0085C926 /* Build configuration list for PBXNativeTarget "OAuthKitExample" */;
+			buildPhases = (
+				2888C96C1C87959E0085C926 /* Sources */,
+				2888C96D1C87959E0085C926 /* Frameworks */,
+				2888C96E1C87959E0085C926 /* Resources */,
+				2888C9921C8795B70085C926 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2888C9911C8795B70085C926 /* PBXTargetDependency */,
+			);
+			name = OAuthKitExample;
+			productName = OAuthKitExample;
+			productReference = 2888C9701C87959E0085C926 /* OAuthKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2888C9681C87959E0085C926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Atlassian;
+				TargetAttributes = {
+					2888C96F1C87959E0085C926 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2888C96B1C87959E0085C926 /* Build configuration list for PBXProject "OAuthKitExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2888C9671C87959E0085C926;
+			productRefGroup = 2888C9711C87959E0085C926 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2888C9861C8795AB0085C926 /* Products */;
+					ProjectRef = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2888C96F1C87959E0085C926 /* OAuthKitExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2888C98B1C8795AB0085C926 /* OAuthKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthKit.framework;
+			remoteRef = 2888C98A1C8795AB0085C926 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2888C98D1C8795AB0085C926 /* OAuthKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthKitTests.xctest;
+			remoteRef = 2888C98C1C8795AB0085C926 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2888C96E1C87959E0085C926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2888C97E1C87959F0085C926 /* LaunchScreen.storyboard in Resources */,
+				2888C97B1C87959F0085C926 /* Assets.xcassets in Resources */,
+				2888C9791C87959E0085C926 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2888C96C1C87959E0085C926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2888C9761C87959E0085C926 /* ViewController.swift in Sources */,
+				2888C9741C87959E0085C926 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2888C9911C8795B70085C926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthKit;
+			targetProxy = 2888C9901C8795B70085C926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2888C9771C87959E0085C926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2888C9781C87959E0085C926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2888C97C1C87959F0085C926 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2888C97D1C87959F0085C926 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2888C9801C87959F0085C926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2888C9811C87959F0085C926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2888C9831C87959F0085C926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = OAuthKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.OAuthKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2888C9841C87959F0085C926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = OAuthKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.OAuthKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2888C96B1C87959E0085C926 /* Build configuration list for PBXProject "OAuthKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2888C9801C87959F0085C926 /* Debug */,
+				2888C9811C87959F0085C926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2888C9821C87959F0085C926 /* Build configuration list for PBXNativeTarget "OAuthKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2888C9831C87959F0085C926 /* Debug */,
+				2888C9841C87959F0085C926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2888C9681C87959E0085C926 /* Project object */;
+}
