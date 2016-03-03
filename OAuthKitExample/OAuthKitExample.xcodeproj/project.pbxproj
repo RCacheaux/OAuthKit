@@ -12,31 +12,53 @@
 		2888C9791C87959E0085C926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2888C9771C87959E0085C926 /* Main.storyboard */; };
 		2888C97B1C87959F0085C926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2888C97A1C87959F0085C926 /* Assets.xcassets */; };
 		2888C97E1C87959F0085C926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2888C97C1C87959F0085C926 /* LaunchScreen.storyboard */; };
-		2888C98E1C8795B70085C926 /* OAuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2888C98B1C8795AB0085C926 /* OAuthKit.framework */; };
-		2888C98F1C8795B70085C926 /* OAuthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2888C98B1C8795AB0085C926 /* OAuthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F27ABE01C88863E0052CC16 /* BitbucketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27ABD81C8885DD0052CC16 /* BitbucketKit.framework */; };
+		9F27ABE11C88863E0052CC16 /* BitbucketKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27ABD81C8885DD0052CC16 /* BitbucketKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F27ABF31C888B7A0052CC16 /* OAuthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27ABF01C888B6D0052CC16 /* OAuthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2888C98A1C8795AB0085C926 /* PBXContainerItemProxy */ = {
+		9F27ABD71C8885DD0052CC16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+			containerPortal = 9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F27AB871C887A980052CC16;
+			remoteInfo = BitbucketKit;
+		};
+		9F27ABD91C8885DD0052CC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F27AB911C887A980052CC16;
+			remoteInfo = BitbucketKitTests;
+		};
+		9F27ABDE1C88861F0052CC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F27AB861C887A980052CC16;
+			remoteInfo = BitbucketKit;
+		};
+		9F27ABE21C88863E0052CC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F27AB861C887A980052CC16;
+			remoteInfo = BitbucketKit;
+		};
+		9F27ABEF1C888B6D0052CC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F27ABE91C888B6D0052CC16 /* OAuthKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2888C9431C87923F0085C926;
 			remoteInfo = OAuthKit;
 		};
-		2888C98C1C8795AB0085C926 /* PBXContainerItemProxy */ = {
+		9F27ABF11C888B6D0052CC16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+			containerPortal = 9F27ABE91C888B6D0052CC16 /* OAuthKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2888C94D1C8792400085C926;
 			remoteInfo = OAuthKitTests;
-		};
-		2888C9901C8795B70085C926 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2888C9421C87923F0085C926;
-			remoteInfo = OAuthKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,7 +69,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2888C98F1C8795B70085C926 /* OAuthKit.framework in Embed Frameworks */,
+				9F27ABF31C888B7A0052CC16 /* OAuthKit.framework in Embed Frameworks */,
+				9F27ABE11C88863E0052CC16 /* BitbucketKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +85,8 @@
 		2888C97A1C87959F0085C926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2888C97D1C87959F0085C926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2888C97F1C87959F0085C926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthKit.xcodeproj; path = ../OAuthKit/OAuthKit.xcodeproj; sourceTree = "<group>"; };
+		9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BitbucketKit.xcodeproj; path = ../BitbucketKit/BitbucketKit.xcodeproj; sourceTree = "<group>"; };
+		9F27ABE91C888B6D0052CC16 /* OAuthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthKit.xcodeproj; path = ../OAuthKit/OAuthKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2888C98E1C8795B70085C926 /* OAuthKit.framework in Frameworks */,
+				9F27ABE01C88863E0052CC16 /* BitbucketKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +104,8 @@
 		2888C9671C87959E0085C926 = {
 			isa = PBXGroup;
 			children = (
-				2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */,
+				9F27ABE91C888B6D0052CC16 /* OAuthKit.xcodeproj */,
+				9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */,
 				2888C9721C87959E0085C926 /* OAuthKitExample */,
 				2888C9711C87959E0085C926 /* Products */,
 			);
@@ -107,11 +132,20 @@
 			path = OAuthKitExample;
 			sourceTree = "<group>";
 		};
-		2888C9861C8795AB0085C926 /* Products */ = {
+		9F27ABD21C8885DD0052CC16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2888C98B1C8795AB0085C926 /* OAuthKit.framework */,
-				2888C98D1C8795AB0085C926 /* OAuthKitTests.xctest */,
+				9F27ABD81C8885DD0052CC16 /* BitbucketKit.framework */,
+				9F27ABDA1C8885DD0052CC16 /* BitbucketKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F27ABEA1C888B6D0052CC16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F27ABF01C888B6D0052CC16 /* OAuthKit.framework */,
+				9F27ABF21C888B6D0052CC16 /* OAuthKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +165,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				2888C9911C8795B70085C926 /* PBXTargetDependency */,
+				9F27ABDF1C88861F0052CC16 /* PBXTargetDependency */,
+				9F27ABE31C88863E0052CC16 /* PBXTargetDependency */,
 			);
 			name = OAuthKitExample;
 			productName = OAuthKitExample;
@@ -166,8 +201,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2888C9861C8795AB0085C926 /* Products */;
-					ProjectRef = 2888C9851C8795AB0085C926 /* OAuthKit.xcodeproj */;
+					ProductGroup = 9F27ABD21C8885DD0052CC16 /* Products */;
+					ProjectRef = 9F27ABD11C8885DD0052CC16 /* BitbucketKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F27ABEA1C888B6D0052CC16 /* Products */;
+					ProjectRef = 9F27ABE91C888B6D0052CC16 /* OAuthKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -178,18 +217,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2888C98B1C8795AB0085C926 /* OAuthKit.framework */ = {
+		9F27ABD81C8885DD0052CC16 /* BitbucketKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BitbucketKit.framework;
+			remoteRef = 9F27ABD71C8885DD0052CC16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F27ABDA1C8885DD0052CC16 /* BitbucketKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BitbucketKitTests.xctest;
+			remoteRef = 9F27ABD91C8885DD0052CC16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F27ABF01C888B6D0052CC16 /* OAuthKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OAuthKit.framework;
-			remoteRef = 2888C98A1C8795AB0085C926 /* PBXContainerItemProxy */;
+			remoteRef = 9F27ABEF1C888B6D0052CC16 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2888C98D1C8795AB0085C926 /* OAuthKitTests.xctest */ = {
+		9F27ABF21C888B6D0052CC16 /* OAuthKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = OAuthKitTests.xctest;
-			remoteRef = 2888C98C1C8795AB0085C926 /* PBXContainerItemProxy */;
+			remoteRef = 9F27ABF11C888B6D0052CC16 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -220,10 +273,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2888C9911C8795B70085C926 /* PBXTargetDependency */ = {
+		9F27ABDF1C88861F0052CC16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = OAuthKit;
-			targetProxy = 2888C9901C8795B70085C926 /* PBXContainerItemProxy */;
+			name = BitbucketKit;
+			targetProxy = 9F27ABDE1C88861F0052CC16 /* PBXContainerItemProxy */;
+		};
+		9F27ABE31C88863E0052CC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BitbucketKit;
+			targetProxy = 9F27ABE21C88863E0052CC16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

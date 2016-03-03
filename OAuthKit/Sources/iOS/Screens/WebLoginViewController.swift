@@ -5,13 +5,15 @@ import UIKit
 class WebLoginViewController: UIViewController {
   let clientSecret: String
   let clientID: String
+  let onComplete: Credential -> Void
   var rootView: WebLoginRootView {
     return view as! WebLoginRootView
   }
 
-  init(clientSecret: String, clientID: String) {
+  init(clientSecret: String, clientID: String, onComplete: Credential -> Void) {
     self.clientSecret = clientSecret
     self.clientID = clientID
+    self.onComplete = onComplete
     super.init(nibName: nil, bundle: nil)
   }
 
@@ -82,13 +84,30 @@ class WebLoginViewController: UIViewController {
 
       do {
         let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+        if let json = json as? [String: AnyObject] {
+          if let
+            accessToken = json["access_token"] as? String,
+            scopesList = json["scopes"] as? String,
+            expiresIn = json["expires_in"] as? Int,
+            refreshToken = json["refresh_token"] as? String,
+            tokenType = json["token_type"] as? String {
+
+              let scopes = scopesList.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+              let credential = Credential(accessToken: accessToken, scopes: scopes, expiresIn: expiresIn, refreshToken: refreshToken, tokenType: tokenType)
+              print(credential)
+              self.onComplete(credential)
+
+
+          }
+        }
+
       } catch {
-
+        
       }
-
-
-    }.resume()
-
+      
+      
+      }.resume()
+    
   }
-
+  
 }

@@ -18,6 +18,7 @@
 		2888C99A1C8797070085C926 /* WebLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888C9991C8797070085C926 /* WebLoginViewController.swift */; };
 		2888C99E1C87982C0085C926 /* WebLoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888C99D1C87982C0085C926 /* WebLoginRootView.swift */; };
 		2888C9A01C8798C90085C926 /* WebLoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888C99F1C8798C90085C926 /* WebLoginFlow.swift */; };
+		9F27ABF51C888B9D0052CC16 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27ABF41C888B9D0052CC16 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2888C9991C8797070085C926 /* WebLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginViewController.swift; sourceTree = "<group>"; };
 		2888C99D1C87982C0085C926 /* WebLoginRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginRootView.swift; sourceTree = "<group>"; };
 		2888C99F1C8798C90085C926 /* WebLoginFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginFlow.swift; sourceTree = "<group>"; };
+		9F27ABF41C888B9D0052CC16 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F27ABF51C888B9D0052CC16 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 		2888C9391C87923F0085C926 = {
 			isa = PBXGroup;
 			children = (
+				9F27ABF61C888BBE0052CC16 /* Frameworks */,
 				2888C95D1C8792800085C926 /* Sources */,
 				2888C9451C87923F0085C926 /* OAuthKit */,
 				2888C9511C8792400085C926 /* OAuthKitTests */,
@@ -156,6 +160,14 @@
 				2888C99F1C8798C90085C926 /* WebLoginFlow.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9F27ABF61C888BBE0052CC16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F27ABF41C888B9D0052CC16 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
