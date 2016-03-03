@@ -19,11 +19,15 @@ public class LoginAction: Action {
       self.credential = $0
       self.getUser(onComplete: { account in
         self.account = account
-        self.presentingViewController.dismissViewControllerAnimated(true, completion: nil)
+        dispatch_async(dispatch_get_main_queue()) {
+          self.presentingViewController.dismissViewControllerAnimated(true, completion: nil)
+        }
         self.finishedExecutingAction()
       })
     })
-    presentingViewController.presentViewController(webLoginFlow, animated: true, completion: nil)
+    dispatch_async(dispatch_get_main_queue()) {
+      self.presentingViewController.presentViewController(webLoginFlow, animated: true, completion: nil)
+    }
   }
 
 
